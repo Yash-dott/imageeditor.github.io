@@ -93,33 +93,7 @@ body {
     width: 100%;
 }
 
-/* .progress {
-    width: 100%;
-    border: 2px;
-    height: 5px;
-    border-radius: 5px;
-    border: 0.1px solid rgba(86, 86, 86, 0.414);
-    cursor: pointer;
-}
 
-.bar {
-    position: relative;
-    background-color: rgb(38, 38, 196);
-    height: 5px;
-    width: 50%;
-    border-radius: 5px;
-}
-
-.bar::after {
-    content: "";
-    position: absolute;
-    height: 12px;
-    width: 12px;
-    right: -5px;
-    top: -3px;
-    border-radius: 50%;
-    background: rgb(38, 38, 196);
-} */
 
 /* leftcontainer last btns */
 .more_action h4 {
