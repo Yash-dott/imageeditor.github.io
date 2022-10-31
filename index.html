@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6fb7a193c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assists/css/style.css">
+    <title>Image Editor</title>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="main">
+            <div class="container">
+
+                <!-- name -->
+                <div class="project_name">Image Editor</div>
+
+                <!-- img and controls container -->
+                <div class="edit_controls">
+
+                    <!-- left_container -->
+                    <div class="controls_btn">
+                        <h3>Filters</h3>
+
+                        <div class="filters_btn">
+                            <input type="button" value="Brightness" class="filterbutton">
+                            <input type="button" value="Saturation" class="filterbutton">
+                            <input type="button" value="Blur" class="filterbutton">
+                            <input type="button" value="Grayscale" class="filterbutton">
+                        </div>
+
+                        <div class="progress_container">
+                            <div class="progress_details">
+                                <div class="filter_name">Brightness</div>
+                                <div class="percentage">100%</div>
+                            </div>
+                            <!-- <div class="progress">
+                                <div class="bar"></div>
+                            </div> -->
+                            <input type="range" name="" id="progress" min="0" max="200" value="100">
+                        </div>
+
+                        <div class="more_action">
+                            <h4>Rotate & Flip</h4>
+                            <div class="more_action_btn">
+                                <button class="adj_btn" id="rotate_anti"><i class="fa-solid fa-rotate-left"></i></button>
+                                <button class="adj_btn" id="rotate_clock"><i class="fa-solid fa-rotate-right"></i></button>
+                                <button class="adj_btn" id="flip_x"><img src="assists/images/flip.png" alt="" width="10px" height="10px"></button>
+                                <button class="adj_btn" id="flip_y"><img src="assists/images/flip-2.png" alt="" width="10px" height="10px"></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                 <!-- right container -->
+                    <div class="user_image">
+                        <img src="/pexels-pixabay-417173.jpg" alt="" id="preview_image">
+                    </div>
+                </div>
+ 
+                <!-- bottom buttons -->
+                <div class="additional_btns">
+
+                    <div class="left_btn">
+                        <input type="button" value="RESET FILTERS" id="reset">
+                    </div>
+                    <div class="right_btn">
+                        <input type="file" accept="image/*" id="inputfilechoose" >
+                        <input type="button" value="CHOOSE IMAGE" id="btnfilechoose">
+                        <input type="button" value="SAVE IMAGE" id="download_image">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+
+
+
+
+</body>
+<script src="assists/js/main.js"></script>
+
+</html>
